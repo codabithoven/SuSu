@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Header from '../component/Header'
 import {classnames} from 'tailwindcss-classnames';
+import Image from 'next/image';
+import {SearchIcon, MicrophoneIcon} from "@heroicons/react/solid"
 
 export default function Home() {
   return (
@@ -12,23 +14,30 @@ export default function Home() {
       </Head>
 
      {/* Header */}
-    <Header />
+      <Header />
+
      {/* Body */}
      
+      <form className='flex flex-col items-center mt-40' >
+        <Image 
+          width="300" 
+          objectFit='cover'
+          height="100" 
+          src="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        />
+        <div className='flex w-full mt-5 mx-auto max-w-[90%] border border-gray-200 hover:shadow-lg focus-within:shadow-lg px-5 py-3 rounded-full items-center sm:max-w-xl lg:max-w-2xl'>
+          <SearchIcon className='h-5 text-gray=500 mr-3'/>
+          <input type="text" className='flex-grow focus: outline-none'/>
+          <MicrophoneIcon className='h-5' />
+        </div>
+        <div className='flex flex-col sm:flex-row w-[50%] space-y-2 mt-8 sm:space-y-0 sm:space-x-4 justify-center'>
+          <button className='btn'>Google Search</button>
+          <button className='btn'>I'm feeling lucky!</button>
+        </div>
+      </form>
+
      {/* Footer */}           
-
-    {/*<h1 className='flex justify-end ... text-3xl font-bold underline'>hello world</h1> */}
-        {/* <div class="bg-green-700 w-24 h-12">1</div> 
-        <div class="bg-green-600 w-24 h-12">2</div> 
-        <div class="bg-green-500 w-24 h-12">3</div> 
-        <div class="bg-green-400 w-24 h-12">4</div>  */}
-        
-       {/*
-        <img alt="user-image" className='h-10 w-10 rounded-full hover:bg-gray-200 cursor-pointer p-1'/>} 
-       <button className='bg-blue-500 text-white px-6 py-2 font-medium rounded-md hover:brigthness-105' onClick={signIn}>Sign in</button>
-      */}
-
-
+ 
     </div>
   )
 }
