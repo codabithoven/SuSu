@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Header from '../component/Header'
+import {classnames} from 'tailwindcss-classnames';
 
 export default function Home() {
   return (
@@ -9,7 +11,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>Hello World!</h1>
+     {/* Header */}
+      <Header/>
+     {/* Body */}
+     
+     {/* Footer */}           
+
+    {/*<h1 className='flex justify-end ... text-3xl font-bold underline'>hello world</h1> */}
+        {/* <div class="bg-green-700 w-24 h-12">1</div> 
+        <div class="bg-green-600 w-24 h-12">2</div> 
+        <div class="bg-green-500 w-24 h-12">3</div> 
+        <div class="bg-green-400 w-24 h-12">4</div>  */}
+ 
     </div>
   )
 }
