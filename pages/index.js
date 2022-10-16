@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
      {/* Header */}
-      <Header/>
+    <Header />
      {/* Body */}
      
      {/* Footer */}           
@@ -22,7 +22,13 @@ export default function Home() {
         <div class="bg-green-600 w-24 h-12">2</div> 
         <div class="bg-green-500 w-24 h-12">3</div> 
         <div class="bg-green-400 w-24 h-12">4</div>  */}
- 
+        
+       {/*
+        <img alt="user-image" className='h-10 w-10 rounded-full hover:bg-gray-200 cursor-pointer p-1'/>} 
+       <button className='bg-blue-500 text-white px-6 py-2 font-medium rounded-md hover:brigthness-105' onClick={signIn}>Sign in</button>
+      */}
+
+
     </div>
   )
 }
